@@ -1,0 +1,18 @@
+nome = str(input("Digite seu nome: "))
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura em metros: "))
+
+imc = peso / (altura*altura)
+
+if imc <= 18.5:
+    print(f"{nome} esta abaixo do peso {imc}")
+elif imc <= 24.9:
+    print(f"{nome} esta tudo normal {imc}")
+elif imc >= 29.9:
+    print(f"{nome} sobrepeso {imc}")
+elif imc >= 34.9:
+    print(f"{nome} obesidade grau I {imc}")
+elif imc >= 39.9:
+    print(f"{nome} obesidade grau II {imc}")
+else:
+    print(f"{nome} obesidade grau III (morbida) {imc}"
